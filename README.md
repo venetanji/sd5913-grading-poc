@@ -26,7 +26,7 @@ Omit `--limit 3` to prepare all repositories. Outputs appear in `runs/latest/`:
 After publishing this repository, run it from Git while keeping the URL list local:
 
 ```bash
-uv run --from 'git+https://github.com/venetanji/sd5913-grading-poc.git' sd5913-grade-poc INPUT.txt --assignment 1
+uvx --from 'git+https://github.com/venetanji/sd5913-grading-poc.git' sd5913-grade-poc INPUT.txt --assignment 1
 ```
 
 Use a private remote and keep local input/output files out of commits. Public student repositories are not permission to transmit their contents to an external model service.
