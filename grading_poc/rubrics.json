@@ -1,0 +1,31 @@
+{
+  "scale": {
+    "0": "No usable evidence, absent, or materially fails the stated criterion.",
+    "1": "Very limited evidence; major gaps or unsupported claims.",
+    "2": "Partial achievement; noticeable gaps, uneven execution, or weak evidence.",
+    "3": "Meets the brief well; evidence supports the criterion with only minor gaps.",
+    "4": "Exceptional, specific and well-supported achievement of the criterion."
+  },
+  "assignments": {
+    "1": {
+      "title": "Why are we here?",
+      "source": "pfad/assignments/01-why-are-we-here.md (How it is marked); teaching slides deck/week02.py (Assignment 1 marking guidance) and deck/week03.py (marking handoff).",
+      "criteria": [
+        {"name": "Argument", "weight": 40, "description": "A position of the student's own, clearly stated, argued and supported; a defended claim is stronger than a survey."},
+        {"name": "Specificity", "weight": 25, "description": "Concrete detail, named references and meaningful connection to the student's own practice; generic futurism is weak."},
+        {"name": "Craft", "weight": 20, "description": "Essay is structured, edited, within 500-1000 words, uses Markdown appropriately, and citations/links are credible and relevant."},
+        {"name": "Process", "weight": 15, "description": "PROCESS.md honestly describes AI use, one kept output and one rejected output with reasons; commit history shows work across multiple days."}
+      ]
+    },
+    "2": {
+      "title": "Data visualisation",
+      "source": "pfad/assignments/02-data-visualisation.md (How it is marked); teaching slides deck/week03.py (Assignment 2 brief/rubric) and deck/week04.py (submission/check guidance).",
+      "criteria": [
+        {"name": "Data", "weight": 25, "description": "A natural phenomenon is represented using real published data; source is linked and documented; raw reply is cached in data/ and the repo works offline."},
+        {"name": "Picture", "weight": 35, "description": "The visual communicates or expresses something; transformation fits the data. Informative and artistic approaches are equally valid. The work is made from actual numbers."},
+        {"name": "Code", "weight": 20, "description": "Scripts read committed data, run with uv run and declared dependencies, and contain a readable loop and a student-written function."},
+        {"name": "Process", "weight": 20, "description": "PROCESS.md honestly describes AI use, one kept output and one rejected output with reasons; commit history shows development across multiple days."}
+      ]
+    }
+  }
+}

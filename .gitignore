@@ -1,0 +1,9 @@
+# Student repository URLs and all generated grading artifacts are private.
+inputs/*.txt
+inputs/test-*.txt
+runs/
+.cache/
+.venv/
+.venv-laya/
+__pycache__/
+*.py[cod]
