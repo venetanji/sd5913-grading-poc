@@ -42,7 +42,7 @@ The generic judge-packet contract requests integer criterion scores from 0-4, sh
 Optional local inference uses the PyPI `laya==0.3.28` package and CPU-only PyTorch; the `laya-local` extra pins its install and `uv.lock` routes PyTorch to the CPU wheel index so it does not pull NVIDIA CUDA wheels on Linux. First inference downloads Laya weights from Hugging Face. Run a small pilot explicitly:
 
 ```bash
-uv run --extra laya-local sd5913-grade-poc INPUT.txt --assignment 1 --limit 1 --judge laya-local
+uvx --from 'sd5913-grading-poc[laya-local] @ git+https://github.com/venetanji/sd5913-grading-poc.git' sd5913-grade-poc INPUT.txt --assignment 1 --limit 1 --judge laya-local
 ```
 
 Laya's scores are continuous 0-4 estimates. It does not generate explanations or evidence citations, so every result is flagged for human review. The judge packs criterion-specific excerpts to reduce context loss; a truncated input is recorded as a review warning. For Assignment 2, Picture is deliberately left unscored for a person to inspect because this prototype does not render images. Local inference sends submission text to the local model process, not the Laya hosted API. The downloaded model weights come from Hugging Face.
